@@ -1,0 +1,37 @@
+.signup {
+    margin-top: -20px;
+}
+
+.signup__input {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 0px 38px;
+
+    &--email {
+        // background-image: url('../img/icons/ph-icon-email-input.svg');
+    }
+
+    &--club-name {
+        // background-image: url('../img/icons/ph-icon-club-name-input.svg');
+    }
+
+    input {
+        background-color: transparent;
+        width: 100%;
+        height: 78px;
+        padding: 14px 38px 0;
+        max-width: 360px;
+        border: 0;
+        border-bottom: 2px solid rgba(164, 190, 217, .3);
+        color: #fff;
+        outline: 0;
+
+        &:focus {
+            border-bottom-color: #fff;
+        }
+    }
+
+    &:nth-child(2) {
+        margin-bottom: 10%;
+    }
+}

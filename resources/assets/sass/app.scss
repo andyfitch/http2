@@ -1,10 +1,41 @@
+// SCSS Variables and Mixins
+@import 'lib/vars';
+@import 'lib/mixins';
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Site Skin
+/* Patterns */
 
-// Variables
-@import "variables";
+@import 'patterns/fonts';
+@import 'patterns/base';
+@import 'patterns/headings';
+@import 'patterns/templates';
+@import 'patterns/buttons';
+@import 'patterns/split';
+@import 'patterns/info';
+@import 'patterns/blog';
+@import 'patterns/backgrounds';
 
-body {
-    background-color: #000;
-}
+/* Components */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/nav';
+@import 'components/product_grid';
+@import 'components/mega_dropdown';
+@import 'components/regular_dropdown';
+@import 'components/sections';
+@import 'components/hero';
+@import 'components/icons';
+@import 'components/pricing_table';
+@import 'components/pill_switch';
+@import 'components/testimonials';
+@import 'components/logo_grid';
+@import 'components/signup_form';
+@import 'components/product_cards';
+@import 'components/simple_info_box';
+@import 'components/overlay';
+@import 'components/share_demo';
+@import 'components/stats';
+@import 'components/video_container';
+@import 'components/expose_style_fixes';
+
+@import 'patterns/helper';

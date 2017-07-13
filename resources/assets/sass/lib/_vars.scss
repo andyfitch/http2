@@ -1,0 +1,25 @@
+/* Fonts */
+$main: 'Arial';
+
+/* Colours */
+
+$white: #fff;               // White
+$daintree: #02212f;         // Text blue
+$blumine: #105b7d;          // Main blue
+$bluezodiac: #0d2649;       // Darker blue
+$nileblue: #12315a;         // Dark bg blue
+$pacificblue: #1aa1cf;      // Light blue
+$shamrock: #3ace9d;         // Btn green
+$textgrey: #58656c;         // Grey
+$concrete: #f3f3f3;         // Background grey
+$red: #df0924;              // Red
+
+/* Curves */
+$gazcurve: cubic-bezier(.01,.32,.11,.99);
+
+/* Breakpoints */
+$laptop: 1400px;
+$tablet: 1040px;
+$nav: 800px;
+$moblrg: 680px;
+$mobsml: 480px;
