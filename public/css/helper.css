@@ -1,0 +1,150 @@
+/**
+ * Helper styles
+ * e.g. .centered { margin-right: auto; margin-left: auto; }
+ */
+
+.hide {
+  display: none;
+}
+
+.tc {
+  text-align: center;
+}
+
+.bld,
+b,
+strong {
+  font-weight: 600;
+}
+
+.uln {
+  text-decoration: underline;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 0px 26px 53px -4px rgba(0, 0, 0, 0.27);
+          box-shadow: 0px 26px 53px -4px rgba(0, 0, 0, 0.27);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.img--full > img.not-mob,
+.not-mob {
+  display: block;
+}
+
+.img--full > img.not-mob.not-mob--ib,
+.not-mob.not-mob--ib {
+  display: inline-block;
+}
+
+@media (max-width: 680px) {
+  .img--full > img.not-mob.not-mob--ib,
+  .not-mob.not-mob--ib {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .img--full > img.not-mob,
+  .not-mob {
+    display: none;
+  }
+}
+
+.img--full > img.mob-only,
+.mob-only {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .img--full > img.mob-only,
+  .mob-only {
+    display: block;
+  }
+}
+
+.not-tablet {
+  display: block;
+}
+
+@media (max-width: 1040px) {
+  .not-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .img--full.grow-mob {
+    width: 18%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0;
+  }
+}
+
+.swap-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media (max-width: 680px) {
+  .swap-mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 680px) {
+  .left-mobile {
+    text-align: left !important;
+  }
+
+  .left-mobile.central-paragraph {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 680px) {
+  .center-mobile {
+    text-align: center !important;
+  }
+}
+
+.clean-list {
+  list-style: none;
+}
+
+.cf::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bump-bottom {
+  margin-bottom: 5vh;
+}
+

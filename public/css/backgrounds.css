@@ -1,0 +1,189 @@
+/* Pitchero has a funky background that spans multiple sections. The scss that relates to that lives in here. */
+
+.bg-white::before,
+.bg-concrete::before {
+  background-color: #fff;
+}
+
+.bg-white p,
+.bg-white li,
+.bg-concrete p,
+.bg-concrete li {
+  color: #02212f;
+}
+
+.bg-white p > a,
+.bg-white li > a,
+.bg-concrete p > a,
+.bg-concrete li > a {
+  color: #02212f;
+}
+
+.bg-white p > b,
+.bg-white li > b,
+.bg-concrete p > b,
+.bg-concrete li > b {
+  color: #02212f;
+}
+
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white h6,
+.bg-concrete h1,
+.bg-concrete h2,
+.bg-concrete h3,
+.bg-concrete h4,
+.bg-concrete h5,
+.bg-concrete h6 {
+  color: #02212f;
+}
+
+.bg-concrete::before {
+  background-color: #02212f;
+}
+
+.bg-blumine::before {
+  background-color: #02212f;
+}
+
+.bg-blumine h1,
+.bg-blumine h2,
+.bg-blumine h3,
+.bg-blumine h4,
+.bg-blumine h5,
+.bg-blumine h6 {
+  color: #fff;
+}
+
+.bg-blumine p {
+  color: #a4bed9;
+}
+
+.bg-blumine p b {
+  color: #fff;
+  font-weight: normal;
+}
+
+.bg-pacificblue::before {
+  background-color: #02212f;
+}
+
+.bg-pacificblue p,
+.bg-pacificblue h1,
+.bg-pacificblue h2,
+.bg-pacificblue h3,
+.bg-pacificblue h4,
+.bg-pacificblue h5,
+.bg-pacificblue h6 {
+  color: #fff;
+}
+
+.bg-white,
+.bg-concrete,
+.bg-concrete,
+.bg-blumine,
+.bg-pacificblue {
+  position: relative;
+  background-color: transparent !important;
+}
+
+.bg-white::before,
+.bg-concrete::before,
+.bg-concrete::before,
+.bg-blumine::before,
+.bg-pacificblue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.bg-white.block-pitch-bg::before,
+.bg-concrete.block-pitch-bg::before,
+.bg-concrete.block-pitch-bg::before,
+.bg-blumine.block-pitch-bg::before,
+.bg-pacificblue.block-pitch-bg::before {
+  z-index: 1;
+}
+
+.bg-white.block-pitch-bg .site-container,
+.bg-concrete.block-pitch-bg .site-container,
+.bg-concrete.block-pitch-bg .site-container,
+.bg-blumine.block-pitch-bg .site-container,
+.bg-pacificblue.block-pitch-bg .site-container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-white.add-pitch-bg::before,
+.bg-concrete.add-pitch-bg::before,
+.bg-concrete.add-pitch-bg::before,
+.bg-blumine.add-pitch-bg::before,
+.bg-pacificblue.add-pitch-bg::before {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% -5px;
+}
+
+.site-section--1-6 .bg-white.add-pitch-bg::before,
+.site-section--1-6
+.bg-concrete.add-pitch-bg::before,
+.site-section--1-6
+.bg-concrete.add-pitch-bg::before,
+.site-section--1-6
+.bg-blumine.add-pitch-bg::before,
+.site-section--1-6
+.bg-pacificblue.add-pitch-bg::before {
+  background-position: 93% 64%;
+}
+
+.body__inner {
+  position: relative;
+}
+
+.pitch-bg {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.pitch-bg svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .pitch-bg svg {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .pitch-bg svg {
+    width: 1920px;
+    height: 5456px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pitch-bg {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+

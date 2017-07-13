@@ -1,0 +1,30 @@
+.signup {
+  margin-top: -20px;
+}
+
+.signup__input {
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 0px 38px;
+}
+
+.signup__input input {
+  background-color: transparent;
+  width: 100%;
+  height: 78px;
+  padding: 14px 38px 0;
+  max-width: 360px;
+  border: 0;
+  border-bottom: 2px solid rgba(164, 190, 217, 0.3);
+  color: #fff;
+  outline: 0;
+}
+
+.signup__input input:focus {
+  border-bottom-color: #fff;
+}
+
+.signup__input:nth-child(2) {
+  margin-bottom: 10%;
+}
+

@@ -1,0 +1,110 @@
+/*doc
+---
+title: Headings
+name: headings
+category: Headings
+---
+
+## Here is a heading about headings
+
+Button styles can be applied to any element. Typically you'll want to use either a `<button>` or an `<a>` element:
+
+```
+<h1 class="-alpha">Page title</h1>
+<h2 class="-beta">A h2 Subtitle</h2>
+<h3 class="-beta">A h3 Subtitle at the same size</h3>
+<h4 class="-gamma">A h4 Subtitle at a larger size size</h3>
+<p class="-beta">A paragraph could pick up these styles too</p>
+```
+
+You'll notice that even though the h2 and h3 are different in the hierarchy, they still appear the same as -beta defines its size, not the element itself.
+
+The reason we have &.bold utility classes commented out is because sometimes custom fonts have different weights (e.g. bold, semibold) that our designers use for emphasis.
+.bold has been added to hybrid in /patterns/_helpers.scss as font-weight: bold; but that can be overridden using these classes.
+
+*/
+
+.alpha {
+  font-family: 'Arial';
+  font-size: rem(46px);
+  font-weight: 400;
+  line-height: 1.2;
+  /* &.bold {
+		font-weight: 600;
+	} */
+}
+
+@media (max-width: 1400px) {
+  .alpha {
+    font-size: rem(32px);
+  }
+}
+
+@media (max-width: 680px) {
+  .alpha {
+    font-size: rem(24px);
+  }
+}
+
+.beta {
+  font-family: 'Arial';
+  font-size: rem(36px);
+  font-weight: 400;
+  line-height: 1.2;
+  /* &.bold {
+		font-weight: 600;
+	} */
+}
+
+@media (max-width: 1400px) {
+  .beta {
+    font-size: rem(24px);
+  }
+}
+
+.gamma {
+  font-family: 'Arial';
+  font-size: rem(24px);
+  font-weight: 400;
+  line-height: 1.2;
+  /* &.bold {
+		font-weight: 600;
+	} */
+}
+
+@media (max-width: 1400px) {
+  .gamma {
+    font-size: rem(18px);
+  }
+}
+
+.delta {
+  font-family: 'Arial';
+  font-size: rem(20px);
+  font-weight: 400;
+  line-height: 1.2;
+  /* &.bold {
+		font-weight: 600;
+	} */
+}
+
+.epsilon {
+  font-family: 'Arial';
+  font-size: rem(17px);
+  font-weight: 400;
+  line-height: 1.2;
+  /* &.bold {
+		font-weight: 600;
+	} */
+}
+
+.zeta {
+  font-family: 'Arial';
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: 1.2;
+  /* &.bold {
+		font-weight: 600;
+	} */
+}
+

@@ -1,0 +1,47 @@
+/*
+    Fix for <li> on header when in admin mode
+ */
+
+.logged-in .hero .info__custom-bullet li,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li,
+.logged-in .pricing-table-list li,
+.logged-in .info__custom-bullet li {
+  position: relative;
+}
+
+.logged-in .hero .info__custom-bullet li .editable,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li .editable,
+.logged-in .pricing-table-list li .editable,
+.logged-in .info__custom-bullet li .editable {
+  position: static;
+  display: inline;
+}
+
+.logged-in .hero .info__custom-bullet li .editable p,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li .editable p,
+.logged-in .pricing-table-list li .editable p,
+.logged-in .info__custom-bullet li .editable p {
+  display: inline;
+}
+
+.logged-in .hero .info__custom-bullet li .editable:not(.is-editing):before,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li .editable:not(.is-editing):before,
+.logged-in .pricing-table-list li .editable:not(.is-editing):before,
+.logged-in .info__custom-bullet li .editable:not(.is-editing):before {
+  text-align: right;
+  width: 30px;
+  display: inline-block;
+}
+
+.logged-in [data-uuid="0ab950580529bcd81d285773e7e311f1"] {
+  display: block;
+}
+
+.logged-in .testimonials__item .testimonials__heading .editable {
+  display: inline;
+}
+
+.logged-in .testimonials__item .btn.btn--ghost.btn--no-b.js-video-btn {
+  margin-top: -10px;
+}
+

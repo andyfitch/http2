@@ -1,0 +1,214 @@
+/* Ironically named */
+.mega-dropdown {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: -1;
+    background-color: #fff;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    box-shadow: 0px 26px 53px -4px rgba(0, 0, 0, .27);
+    transition: padding-top .3s cubic-bezier(.01,.32,.11,.99), top .3s cubic-bezier(.01,.32,.11,.99), opacity .3s cubic-bezier(.01,.32,.11,.99);
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    .js-sticky & {
+        top: 68px;
+    }
+
+    .site-container {
+
+        max-width: 1220px;
+
+        &:first-child {
+            z-index: 1;
+            position: relative;
+        }
+
+        &:last-child {
+            .mega-dropdown__item {
+                @media (max-width: 800px) {
+                    &:first-child {
+                        order: 2;
+                    }
+                    &:last-child {
+                        order: 1;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 800px) {
+            padding-right: 0;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .site-nav__item {
+        &:hover & {
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+
+            body.js & {
+                pointer-events: none;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+    .site-nav__item--hover & {
+        // If JS enabled, use that to open Mega DD, so we can programmatically close it too
+        pointer-events: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @media (max-width: 1400px) {
+        top: 68px;
+        padding-top: 4%;
+    }
+
+    @media (max-height: 680px) { // height not width
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 800px) {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        background-color: transparent;
+        box-shadow: none;
+        pointer-events: auto;
+        box-shadow: none;
+
+        .site-container {
+            list-style: none;
+        }
+
+        .js-sticky & {
+            top: auto;
+            padding-top: 4%;
+        }
+    }
+}
+/* .site-nav__item {
+    // If JS enabled, use that to open Mega DD, so we can programmatically close it too
+    &--hover .mega-dropdown {
+        pointer-events: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+} */
+
+.mega-dropdown__close {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 26px;
+    border: solid 1px #105b7d;
+    text-indent: -99999px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #105b7d;
+
+        &::before,
+        &::after {
+            background-color: #fff;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+
+    &::before,
+    &::after {
+
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        display: block;
+        background-color: #105b7d;
+        transform-origin: 50% 50%;
+
+        @media (max-width: 800px) {
+            width: 10px;
+        }
+    }
+    &::before {
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &::after {
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+
+    @media (max-width: 1250px) {
+        right: 10px;
+    }
+    @media (max-width: 1000px) {
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+    }
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+
+.mega-dropdown__image {
+    min-width: 125px;
+}
+
+.flex-container {
+    @media (max-width: 1400px) {
+        display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    @media (max-width: 1040px) {
+        flex-direction: column;
+
+        li {
+            width: 100%;
+            padding: 0 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.flex-item {
+    @media (max-width: 1040px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px !important;
+
+        .mega-dropdown__content {
+            width: 100%;
+        }
+
+        .mega-dropdown__image {
+            width: auto !important;
+            max-width: 70%;
+
+            &--portrait {
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

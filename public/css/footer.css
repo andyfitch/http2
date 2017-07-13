@@ -1,0 +1,239 @@
+.footer {
+  padding-bottom: 2%;
+}
+
+.footer__left-col {
+  max-width: 400px;
+  width: 38.84%;
+  float: left;
+}
+
+@media (max-width: 1040px) {
+  .footer__left-col {
+    max-width: none;
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 1% auto 7.5%;
+  }
+}
+
+@media (max-width: 680px) {
+  .footer__left-col {
+    margin: 1% auto 10%;
+  }
+}
+
+.footer__right-col {
+  width: 61.16%;
+  float: left;
+}
+
+@media (max-width: 1040px) {
+  .footer__right-col {
+    width: 100%;
+    float: none;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}
+
+.footer__signup-btn {
+  margin-bottom: 3%;
+}
+
+@media (max-width: 1040px) {
+  .footer__signup-btn {
+    margin: 0 auto;
+    display: block;
+    max-width: 214px;
+  }
+}
+
+.footer__list {
+  width: 25%;
+  float: left;
+}
+
+.footer__list:nth-child(2) {
+  padding-left: 3%;
+}
+
+.footer__list:nth-child(3) {
+  padding-left: 3%;
+}
+
+.footer__list:last-child {
+  margin-right: 0;
+}
+
+.footer__list li {
+  color: #02212f;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.footer__list li h5 {
+  color: #02212f;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__list li a {
+  color: #02212f;
+}
+
+.footer__list .footer__plus,
+.footer__list .footer__minus {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .footer__list {
+    width: 100%;
+    max-width: 314px;
+    margin: 0 auto;
+    text-align: left;
+    float: none;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #02212f;
+    position: relative;
+    -webkit-transition: height 0.3s cubic-bezier(0.01, 0.32, 0.11, 0.99);
+    transition: height 0.3s cubic-bezier(0.01, 0.32, 0.11, 0.99);
+  }
+
+  .footer__list .footer__minus,
+  .footer__list .footer__plus {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    font-size: 26px;
+  }
+
+  .footer__list.-closed {
+    height: 52px;
+  }
+
+  .footer__list.-closed .footer__minus {
+    display: none;
+  }
+
+  .footer__list.-closed .footer__plus {
+    display: block;
+  }
+
+  .footer__list .footer__minus {
+    display: block;
+    right: 2px;
+  }
+
+  .footer__list .footer__plus {
+    display: none;
+  }
+
+  .footer__list:nth-child(2),
+  .footer__list:nth-child(3),
+  .footer__list:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .footer__list:last-child {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__list li {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10px;
+  }
+
+  .footer__list li:first-child {
+    cursor: pointer;
+  }
+
+  .footer__list li.js-footer-accordion-toggle * {
+    pointer-events: none;
+  }
+}
+
+.footer__social {
+  margin-bottom: 10.4%;
+}
+
+@media (max-width: 1040px) {
+  .footer__social {
+    max-width: 170px;
+    display: inline-block;
+    margin: 0 auto 4%;
+  }
+}
+
+.footer__social-item {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding-top: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.footer__social-item img {
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+}
+
+.footer__social-item--facebook {
+  background-color: #0b488a;
+}
+
+.footer__social-item--twitter {
+  background-color: #11a1cf;
+}
+
+.footer__social-item--instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), -webkit-gradient(linear, left top, left bottom, from(#6559ca), color-stop(30%, #bc318f), color-stop(50%, #e33f5f), color-stop(70%, #f77638), to(#fec66d));
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.footer__social-item--youtube {
+  background-color: #f70237;
+}
+
+.footer-hr {
+  clear: left;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  background-color: #e6eaef;
+  height: 2px;
+  width: 100%;
+}
+
+.footnote-container {
+  padding-top: 1.7%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footnote-container p,
+.footnote-container a {
+  color: #02212f;
+}
+
+.footnote-container p {
+  font-size: rem(14px);
+  margin-bottom: 0;
+}
+
+.footnote-container p:first-child {
+  float: right;
+}
+

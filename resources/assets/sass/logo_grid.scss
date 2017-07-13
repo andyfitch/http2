@@ -1,0 +1,54 @@
+.logo-grid {
+
+    max-width: 1000px;
+
+    @media (max-width: 1400px) {
+        max-width: 600px;
+    }
+
+    @media (max-width: 680px) {
+        max-width: 320px;
+    }
+}
+
+.logo-grid__item {
+    width: 25%;
+    float: left;
+    padding: 24px;
+
+    a {
+        display: block;
+        margin: 0 auto;
+        max-width: 140px;
+    }
+
+    &:nth-child(-n+3) {
+        border-right: 1px solid #e0e4e9;
+    }
+
+    &:nth-child(n+5):nth-child(-n+7) {
+        border-right: 1px solid #e0e4e9;
+    }
+
+    &:nth-child(-n+4) {
+        border-bottom: 1px solid #e0e4e9;
+    }
+
+    @media (max-width: 680px) {
+        width: 50%;
+        border-bottom: 1px solid #e0e4e9 !important;
+        border-top: 1px solid transparent !important;
+
+        &:nth-child(even) {
+            border-right: 1px solid transparent !important;
+        }
+
+        &:nth-last-child(2) {
+            border-bottom: 0 !important;
+        }
+
+        &:last-child {
+            border-bottom: 0 !important;
+        }
+     }
+}
