@@ -169,3 +169,228 @@ p {
   visibility: hidden;
 }
 
+.testimonials {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1040px) {
+  .testimonials {
+    background-color: #05597d;
+  }
+}
+
+@media (max-width: 680px) {
+  .testimonials {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.testimonials__item {
+  width: 33.33%;
+  height: 336px;
+  padding: 5.6% 3.6%;
+  float: left;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  color: #fff;
+}
+
+.testimonials__item--no-logo {
+  padding-top: 7.7%;
+}
+
+.testimonials__item--twitter {
+  padding: 4.2%;
+}
+
+.testimonials__item p,
+.testimonials__item h3,
+.testimonials__item h4,
+.testimonials__item .btn--ghost {
+  color: inherit;
+}
+
+.testimonials__item:nth-child(1),
+.testimonials__item:nth-child(7) {
+  background-color: #02212f;
+}
+
+.testimonials__item--wide {
+  background-color: #fff;
+  width: 66.66%;
+  color: #012130;
+}
+
+.testimonials__item:nth-child(3) {
+  background-color: #02212f;
+}
+
+.testimonials__item:nth-child(3) p {
+  color: #a4bed9;
+}
+
+.testimonials__item:nth-child(4) {
+  background-color: #02212f;
+}
+
+.testimonials__item:nth-child(5) {
+  background-color: #02212f;
+}
+
+.testimonials__item .btn--ghost {
+  font-size: rem(12px);
+  text-transform: uppercase;
+  float: right;
+  min-width: 154px;
+  margin-top: 8%;
+}
+
+.testimonials__item .btn--ghost:hover {
+  top: auto;
+  -webkit-box-shadow: 0px 19px 53px -1px rgba(0, 0, 0, 0.27);
+          box-shadow: 0px 19px 53px -1px rgba(0, 0, 0, 0.27);
+  background-color: transparent;
+}
+
+.testimonials__item .btn__play img {
+  top: -12px;
+  width: 38px;
+}
+
+.site-section--testimonials .testimonials__item {
+  width: 50%;
+}
+
+.site-section--testimonials .testimonials__item:nth-child(1) {
+  background-color: #fff;
+  color: #012130;
+}
+
+.site-section--testimonials .testimonials__item:nth-child(2),
+.site-section--testimonials .testimonials__item:nth-child(3) {
+  background-color: #02212f;
+  color: #fff;
+}
+
+.site-section--testimonials .testimonials__item:nth-child(2) p,
+.site-section--testimonials .testimonials__item:nth-child(3) p {
+  color: #fff;
+}
+
+.site-section--testimonials .testimonials__item:nth-child(4) {
+  background-color: #02212f;
+}
+
+@media (max-width: 1400px) {
+  .testimonials__item {
+    height: 278px;
+    padding: 3%;
+  }
+
+  .testimonials__item--no-logo {
+    padding-top: 3%;
+  }
+
+  .testimonials__item--twitter {
+    padding: 1.7% 3%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .testimonials__item {
+    width: 50%;
+  }
+
+  .testimonials__item--wide {
+    width: 50%;
+  }
+
+  .testimonials__item--wide .split__item {
+    width: 100%;
+  }
+
+  .testimonials__item--wide .split__item:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .testimonials__item {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    padding: 8%;
+    margin: 0 auto 1%;
+    float: none;
+  }
+
+  .testimonials__item--no-logo,
+  .testimonials__item--twitter {
+    padding: 8%;
+  }
+
+  .testimonials__item--wide {
+    width: 100%;
+    background-color: #02212f;
+  }
+
+  .testimonials__item .btn--ghost {
+    position: static;
+  }
+
+  .site-section--testimonials .testimonials__item {
+    width: 100%;
+  }
+}
+
+.testimonials__logo {
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials__logo--twitter {
+  float: right;
+}
+
+.testimonials__heading {
+  font-size: rem(27px);
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.testimonials__logo ~ .testimonials__heading {
+  padding-top: 4%;
+}
+
+.testimonials__heading--twitter {
+  font-size: rem(16px);
+}
+
+@media (max-width: 680px) {
+  .testimonials__heading {
+    font-size: rem(24px);
+  }
+}
+
+.testimonials__sub-heading {
+  font-weight: 400;
+}
+
+.testimonials__paragraph {
+  font-size: rem(18px);
+  clear: left;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.testimonials__paragraph--twitter {
+  clear: right;
+  margin-bottom: 10%;
+}
+

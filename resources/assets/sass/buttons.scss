@@ -179,3 +179,47 @@ Button                                                            | Modifier Cla
         width: 28px;
     }
 }
+
+/*
+    Fix for <li> on header when in admin mode
+ */
+.logged-in{
+    .hero .info__custom-bullet li,
+    .pricing-table-list.pricing-table-list--pad-top li,
+    .pricing-table-list li,
+    .info__custom-bullet li{
+        position: relative;
+
+        .editable{
+            position: static;
+            display: inline;
+
+            p{
+                display: inline;
+            }
+        }
+
+        .editable:not(.is-editing):before{
+            text-align: right;
+            width: 30px;
+            display: inline-block;
+        }
+    }
+
+    [data-uuid="0ab950580529bcd81d285773e7e311f1"] {
+        display: block;
+    }
+
+    .testimonials__item {
+
+        .testimonials__heading{
+            .editable{
+                display: inline;
+            }
+        }
+
+        .btn.btn--ghost.btn--no-b.js-video-btn {
+            margin-top: -10px;
+        }
+    }
+}

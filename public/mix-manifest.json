@@ -1,4 +1,19 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/backgrounds.css": "/css/backgrounds.css",
+    "/css/buttons.css": "/css/buttons.css",
+    "/css/footer.css": "/css/footer.css",
+    "/css/headings.css": "/css/headings.css",
+    "/css/hero.css": "/css/hero.css",
+    "/css/info.css": "/css/info.css",
+    "/css/mega_dropdown.css": "/css/mega_dropdown.css",
+    "/css/overlay.css": "/css/overlay.css",
+    "/css/pricing_table.css": "/css/pricing_table.css",
+    "/css/product_grid.css": "/css/product_grid.css",
+    "/css/sections.css": "/css/sections.css",
+    "/css/signup_form.css": "/css/signup_form.css",
+    "/css/split.css": "/css/split.css",
+    "/css/templates.css": "/css/templates.css",
+    "/css/video_container.css": "/css/video_container.css"
 }
