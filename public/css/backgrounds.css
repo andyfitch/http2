@@ -283,3 +283,240 @@
   margin-right: 3.2%;
 }
 
+/*doc
+---
+title: Buttons
+name: button
+category: Buttons
+---
+
+Button styles can be applied to any element. Typically you'll want to use either a `<button>` or an `<a>` element:
+
+```html_example
+<button class="btn btnDefault">Click</button>
+<a class="btn btnDefault" href="http://trulia.com">Don't click</a>
+```
+
+If your button is actually a link to another page, please use the
+`<a>` element, while if your button performs an action, such as submitting
+a form or triggering some javascript event, then use a `<button>` element.
+
+##Button Sizes
+There are three 3 sizes for buttons: Large, medium (default)
+and small. Simply apply the size modifier class for the desired size.
+There is also an additional modifier that will make the button take the
+full width of the container. It may be used with the any of the button
+size and style modifiers.
+
+Button                                                            | Modifier Class
+----------------------------------------------------------------- | -----------------
+<button class="btn btnDefault btnLrg">Large</button>              | `btn btnDefault btnLrg`
+<button class="btn btnDefault">Default</button>                   | `btn btnDefault`
+<button class="btn btnDefault btnSml">Small</button>              | `btn btnDefault btnSml`
+<button class="btn btnDefault btnFullWidth">Full width</button>   | `btn btnDefault btnFullWidth`
+
+*/
+
+.btn {
+  display: inline-block;
+  min-width: 214px;
+  text-align: center;
+  padding: 23px 8px;
+  background-color: #02212f;
+  border-radius: 2.5px;
+  font-size: rem(14px);
+  line-height: rem(14px);
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid transparent;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, top 0.3s cubic-bezier(0.01, 0.32, 0.11, 0.99), -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, top 0.3s cubic-bezier(0.01, 0.32, 0.11, 0.99), -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, top 0.3s cubic-bezier(0.01, 0.32, 0.11, 0.99);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, top 0.3s cubic-bezier(0.01, 0.32, 0.11, 0.99), -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.signup .btn {
+  min-width: 233px;
+}
+
+.btn.no-margin {
+  margin: 0 auto !important;
+}
+
+.btn:hover {
+  background-color: #011017;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.btn:hover.drop-shadow {
+  -webkit-box-shadow: 0px 19px 53px -1px rgba(0, 0, 0, 0.27);
+          box-shadow: 0px 19px 53px -1px rgba(0, 0, 0, 0.27);
+}
+
+@media (max-width: 680px) {
+  .signup .btn {
+    margin: 0 auto;
+    max-width: 233px;
+    display: block;
+  }
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #02212f;
+}
+
+.btn--white:hover {
+  background-color: #011017;
+  color: #fff;
+}
+
+.btn--ghost {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-white .btn--ghost {
+  color: #02212f;
+}
+
+.btn--ghost:hover {
+  background-color: transparent;
+  border-color: #011017;
+}
+
+.btn--shamrock-ghost {
+  border: 1px solid #02212f;
+  color: #02212f;
+  min-width: 175px;
+}
+
+.mega-dropdown .btn--shamrock-ghost {
+  color: #02212f;
+}
+
+.btn--shamrock-ghost::after {
+  display: none;
+}
+
+.btn--shamrock-ghost:hover {
+  background-color: #02212f;
+}
+
+.mega-dropdown .btn--shamrock-ghost:hover,
+.mega-dropdown__content .btn--shamrock-ghost:hover {
+  color: #fff;
+}
+
+.btn--shamrock-ghost:hover::after {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .mega-dropdown .btn--shamrock-ghost {
+    padding: 15px 22px;
+    min-width: 0;
+  }
+}
+
+.btn--no-b {
+  border-color: transparent;
+}
+
+.btn--no-b:hover {
+  border-color: transparent;
+}
+
+.btn--left-al {
+  text-align: left;
+  padding-left: 0;
+}
+
+.footer .btn--left-al {
+  font-size: rem(16px);
+  margin-top: 2.8%;
+}
+
+.footer .btn--left-al:hover {
+  background-color: transparent;
+  color: #02212f;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.footer .btn--left-al:hover i {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+@media (max-width: 1040px) {
+  .footer .btn--left-al {
+    text-align: center;
+    max-width: 214px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.btn__play {
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 12px;
+  margin-left: 7px;
+}
+
+.btn__play img {
+  position: absolute;
+  top: -7px;
+  width: 28px;
+}
+
+/*
+    Fix for <li> on header when in admin mode
+ */
+
+.logged-in .hero .info__custom-bullet li,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li,
+.logged-in .pricing-table-list li,
+.logged-in .info__custom-bullet li {
+  position: relative;
+}
+
+.logged-in .hero .info__custom-bullet li .editable,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li .editable,
+.logged-in .pricing-table-list li .editable,
+.logged-in .info__custom-bullet li .editable {
+  position: static;
+  display: inline;
+}
+
+.logged-in .hero .info__custom-bullet li .editable p,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li .editable p,
+.logged-in .pricing-table-list li .editable p,
+.logged-in .info__custom-bullet li .editable p {
+  display: inline;
+}
+
+.logged-in .hero .info__custom-bullet li .editable:not(.is-editing):before,
+.logged-in .pricing-table-list.pricing-table-list--pad-top li .editable:not(.is-editing):before,
+.logged-in .pricing-table-list li .editable:not(.is-editing):before,
+.logged-in .info__custom-bullet li .editable:not(.is-editing):before {
+  text-align: right;
+  width: 30px;
+  display: inline-block;
+}
+
+.logged-in [data-uuid="0ab950580529bcd81d285773e7e311f1"] {
+  display: block;
+}
+
+.logged-in .testimonials__item .testimonials__heading .editable {
+  display: inline;
+}
+
+.logged-in .testimonials__item .btn.btn--ghost.btn--no-b.js-video-btn {
+  margin-top: -10px;
+}
+

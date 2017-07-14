@@ -402,3 +402,459 @@
         background-position-x: 50%;
     }
 }
+
+
+/**
+ * Site Wide elements
+ * e.g. .site-header, .site-nav, .site-container
+ */
+
+body {
+    font-family: 'Arial';
+    position: relative;
+
+    @media (max-width: 800px) {
+        &.-nav-open {
+            overflow: hidden;
+        }
+    }
+}
+
+section:first-of-type {
+    padding-top: 120px;
+
+    @media (max-width: 1400px) {
+        padding-top: 68px;
+    }
+}
+
+button {
+    border: 0;
+    background-color: inherit;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+p {
+    font-size: rem(18px);
+    line-height: 1.6;
+    letter-spacing: -0.7px;
+
+    @media (max-width: 1400px) {
+        font-size: rem(16px);
+    }
+}
+
+.site-container {
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+
+    .hero & {
+        max-width: 1140px;
+    }
+
+    &--small {
+        max-width: 742px;
+    }
+
+    &--explore {
+        max-width: 1340px;
+    }
+
+    &--no-pad-mob {
+        @media (max-width: 450px) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    .site-section--1-5 & {
+        max-width: 1050px;
+    }
+
+    .site-section--1-10 &,
+    .site-section--footer & {
+        max-width: 1070px;
+    }
+
+    .site-section--1-1 &,
+    .site-section--1-3 &, {
+        & ~ .site-container {
+            margin-top: 6.5%;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        max-width: 1000px;
+
+        &--small {
+            max-width: 742px;
+        }
+
+        .site-section--1-1 & {
+            & ~ .site-container {
+                margin-top: 4%;
+            }
+        }
+
+        &--explore {
+            max-width: 1340px;
+        }
+    }
+
+    @media (max-width: 1040px) {
+        max-width: 680px;
+
+        .hero & {
+            max-width: 680px;
+        }
+
+        &--full-width-mob-tablet {
+            max-width: none;
+        }
+        &--small {
+            max-width: 580px;
+        }
+
+        &--explore {
+            max-width: 1040px;
+        }
+    }
+
+    @media (max-width: 680px) {
+        .site-section--1-10 & {
+            max-width: 440px;
+        }
+    }
+}
+.site-container--large {
+    max-width: 1300px;
+    padding: 0 30px;
+}
+
+.inline-logo {
+    display: inline-block;
+
+    img {
+        width: 176px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -5px;
+    }
+
+    .footer & {
+        margin-bottom: 4.5%;
+    }
+
+    @media (max-width: 1040px) {
+        .footer & {
+            display: block;
+            margin: 0 auto 4%;
+            max-width: 176px;
+        }
+    }
+}
+
+.js-fade-up {
+    visibility: hidden;
+}
+
+
+
+.testimonials {
+
+
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1040px) {
+        background-color: #05597d;
+    }
+
+    @media (max-width: 680px) {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.testimonials__item {
+    width: 33.33%;
+    height: 336px;
+    padding: 5.6% 3.6%;
+    float: left;
+    transition: transform .3s ease-in-out;
+    color: #fff;
+
+    &--no-logo {
+        padding-top: 7.7%;
+    }
+
+    &--twitter {
+        padding: 4.2%;
+    }
+
+    p,
+    h3,
+    h4,
+    .btn--ghost {
+        color: inherit;
+    }
+
+    &:nth-child(1),
+    &:nth-child(7), {
+        background-color: #02212f;
+    }
+
+    &--wide {
+        background-color: #fff;
+        width: 66.66%;
+        color: #012130;
+    }
+
+    &:nth-child(3) {
+        background-color: #02212f;
+
+        p {
+            color: #a4bed9;
+        }
+    }
+
+    &:nth-child(4) {
+        background-color: #02212f;
+    }
+
+    &:nth-child(5) {
+        background-color: #02212f;
+    }
+
+    .btn--ghost {
+        font-size: rem(12px);
+        text-transform: uppercase;
+        float: right;
+        min-width: 154px;
+        margin-top: 8%;
+
+        &:hover {
+            top: auto;
+            box-shadow: 0px 19px 53px -1px rgba(0, 0, 0, .27);
+            background-color: transparent;
+        }
+    }
+
+    .btn__play {
+        img {
+            top: -12px;
+            width: 38px;
+        }
+    }
+
+    .site-section--testimonials & {
+        width: 50%;
+
+        &:nth-child(1) {
+            background-color: #fff;
+            color: #012130;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            background-color: #02212f;
+            color: #fff;
+
+            p {
+                color: #fff;
+            }
+        }
+
+        &:nth-child(4) {
+            background-color: #02212f;
+        }
+    }
+
+    // &:hover {
+    //     transform: scale(1.05);
+    //     transform-origin: center;
+
+    //     @media (max-width: 1040px) {
+    //         transform: none;
+    //     }
+    // }
+
+    @media (max-width: 1400px) {
+        height: 278px;
+        padding: 3%;
+
+        &--no-logo {
+            padding-top: 3%;
+        }
+
+        &--twitter {
+            padding: 1.7% 3%;
+        }
+    }
+
+    @media (max-width: 1040px) {
+        width: 50%;
+
+        &--wide {
+            width: 50%;
+
+            .split__item {
+                width: 100%;
+            }
+
+            .split__item:last-child {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 680px) {
+
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        padding: 8%;
+        margin: 0 auto 1%;
+        float: none;
+
+        &--no-logo,
+        &--twitter {
+            padding: 8%;
+        }
+
+        &--wide {
+            width: 100%;
+            background-color: #02212f;
+        }
+
+        .btn--ghost {
+            position: static;
+        }
+
+        .site-section--testimonials & {
+            width: 100%;
+        }
+    }
+}
+
+.testimonials__logo {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 1.5rem;
+
+    &--twitter {
+        float: right;
+    }
+}
+
+.testimonials__heading {
+    font-size: rem(27px);
+    line-height: 1.1;
+    margin-bottom: 0;
+
+    .testimonials__logo ~ & {
+        padding-top: 4%;
+    }
+
+    &--twitter {
+        font-size: rem(16px);
+    }
+
+    @media (max-width: 680px) {
+        font-size: rem(24px);
+    }
+}
+
+.testimonials__sub-heading {
+    font-weight: 400;
+}
+
+.testimonials__paragraph {
+    font-size: rem(18px);
+    clear: left;
+    margin-bottom: 0;
+    line-height: 1.4;
+
+    &--twitter {
+        clear: right;
+        margin-bottom: 10%;
+    }
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+
+    .video-container__video,
+    .site-section--1-2 .info__image & .video-container__img,
+    .site-section--1-2 .info__image & .video-container__end-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &--include-bg {
+        .video-container__video,
+        .site-section--1-2 .info__image & .video-container__img {
+            height: auto;
+        }
+        .video-container__video,
+        .site-section--1-2 .info__image & .video-container__end-img {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 2;
+        }
+        .site-section--1-2 .info__image & .video-container__end-img {
+            height: auto;
+            opacity: 0;
+            transition: opacity .75s;
+
+            &--show {
+                opacity: 1;
+            }
+        }
+        .site-section--1-2 .info__image & .video-container__img {
+            position: relative;
+        }
+    }
+    &--home-finance {
+        height: 0;
+        padding-top: 51.26332046%;
+    }
+    &--home-save-time {
+        .video-container__video {
+            width: 87%;
+            top: 48.1%;
+            left: 51.2%;
+        }
+    }
+    &--club-app--double-iphone {
+        .video-container__video {
+            width: 86.2%;
+            top: 48.3%;
+            left: 51.4%;
+        }
+    }
+    &--match-video-landscape-iphone {
+        .video-container__video,
+        .site-section--1-2 .info__image & .video-container__end-img {
+            width: 68.6%;
+            top: 46.4%;
+            left: 50.9%;
+        }
+    }
+}

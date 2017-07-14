@@ -289,3 +289,238 @@
         height: 58px;
     }
 }
+
+
+/*doc
+---
+title: Headings
+name: headings
+category: Headings
+---
+
+## Here is a heading about headings
+
+Button styles can be applied to any element. Typically you'll want to use either a `<button>` or an `<a>` element:
+
+```
+<h1 class="-alpha">Page title</h1>
+<h2 class="-beta">A h2 Subtitle</h2>
+<h3 class="-beta">A h3 Subtitle at the same size</h3>
+<h4 class="-gamma">A h4 Subtitle at a larger size size</h3>
+<p class="-beta">A paragraph could pick up these styles too</p>
+```
+
+You'll notice that even though the h2 and h3 are different in the hierarchy, they still appear the same as -beta defines its size, not the element itself.
+
+The reason we have &.bold utility classes commented out is because sometimes custom fonts have different weights (e.g. bold, semibold) that our designers use for emphasis.
+.bold has been added to hybrid in /patterns/_helpers.scss as font-weight: bold; but that can be overridden using these classes.
+
+*/
+
+.alpha {
+    font: {
+        family: 'Arial';
+        size: rem(46px);
+        weight: 400;
+    }
+
+    line-height: 1.2;
+    /* &.bold {
+        font-weight: 600;
+    } */
+
+    @media (max-width: 1400px) {
+        font-size: rem(32px);
+    }
+
+    @media (max-width: 680px) {
+        font-size: rem(24px);
+    }
+}
+.beta {
+    font: {
+        family: 'Arial';
+        size: rem(36px);
+        weight: 400;
+    }
+
+    line-height: 1.2;
+    /* &.bold {
+        font-weight: 600;
+    } */
+
+    @media (max-width: 1400px) {
+        font-size: rem(24px);
+    }
+}
+.gamma {
+    font: {
+        family: 'Arial';
+        size: rem(24px);
+        weight: 400;
+    }
+
+    line-height: 1.2;
+    /* &.bold {
+        font-weight: 600;
+    } */
+
+    @media (max-width: 1400px) {
+        font-size: rem(18px);
+    }
+}
+.delta {
+    font: {
+        family: 'Arial';
+        size: rem(20px);
+        weight: 400;
+    }
+
+    line-height: 1.2;
+    /* &.bold {
+        font-weight: 600;
+    } */
+}
+.epsilon {
+    font: {
+        family: 'Arial';
+        size: rem(17px);
+        weight: 400;
+    }
+
+    line-height: 1.2;
+    /* &.bold {
+        font-weight: 600;
+    } */
+}
+.zeta {
+    font: {
+        family: 'Arial';
+        size: rem(16px);
+        weight: 400;
+    }
+
+    line-height: 1.2;
+    /* &.bold {
+        font-weight: 600;
+    } */
+}
+
+
+/**
+ * Helper styles
+ * e.g. .centered { margin-right: auto; margin-left: auto; }
+ */
+
+.hide {
+    display: none;
+}
+
+.tc {
+    text-align: center;
+}
+
+.bld, b, strong{
+    font-weight: 600;
+}
+
+.uln {
+    text-decoration: underline;
+}
+
+.drop-shadow {
+    box-shadow: 0px 26px 53px -4px rgba(0, 0, 0, .27);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.img--full > img.not-mob,
+.not-mob {
+    display: block;
+
+    &.not-mob--ib {
+        display: inline-block;
+
+        @media (max-width: 680px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 680px) {
+        display: none;
+    }
+}
+.img--full > img.mob-only,
+.mob-only {
+    display: none;
+
+    @media (max-width: 680px) {
+        display: block;
+    }
+}
+
+.not-tablet {
+    display: block;
+
+    @media (max-width: 1040px) {
+        display: none;
+    }
+}
+
+.img--full.grow-mob {
+    @media (max-width: 680px) {
+        width: 18%;
+        order: -1;
+        margin: 0;
+    }
+}
+
+.swap-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    @media (max-width: 680px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.left-mobile {
+    @media (max-width: 680px) {
+        text-align: left !important;
+
+        &.central-paragraph {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.center-mobile {
+    @media (max-width: 680px) {
+        text-align: center !important;
+    }
+}
+
+.clean-list {
+    list-style: none;
+}
+
+.cf::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.bump-bottom {
+    margin-bottom: 5vh;
+}

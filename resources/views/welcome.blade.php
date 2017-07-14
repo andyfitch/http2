@@ -6,20 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/app.css" />
         <link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
-        <link rel="stylesheet" type="text/css" href="css/buttons.css" />
         <link rel="stylesheet" type="text/css" href="css/footer.css" />
-        <link rel="stylesheet" type="text/css" href="css/headings.css" />
         <link rel="stylesheet" type="text/css" href="css/hero.css" />
-        <link rel="stylesheet" type="text/css" href="css/info.css" />
         <link rel="stylesheet" type="text/css" href="css/mega_dropdown.css" />
-        <link rel="stylesheet" type="text/css" href="css/overlay.css" />
         <link rel="stylesheet" type="text/css" href="css/pricing_table.css" />
-        <link rel="stylesheet" type="text/css" href="css/product_grid.css" />
         <link rel="stylesheet" type="text/css" href="css/sections.css" />
-        <link rel="stylesheet" type="text/css" href="css/signup_form.css" />
         <link rel="stylesheet" type="text/css" href="css/split.css" />
-        <link rel="stylesheet" type="text/css" href="css/templates.css" />
-        <link rel="stylesheet" type="text/css" href="css/video_container.css" />
         <title>HTTP/2 testing</title>
     </head>
     <body class="">
