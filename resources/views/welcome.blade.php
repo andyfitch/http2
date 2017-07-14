@@ -6,36 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/app.css" />
         <link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
-        <link rel="stylesheet" type="text/css" href="css/base.css" />
-        <link rel="stylesheet" type="text/css" href="css/blog.css" />
         <link rel="stylesheet" type="text/css" href="css/buttons.css" />
-        <link rel="stylesheet" type="text/css" href="css/expose_style_fixes.css" />
-        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
         <link rel="stylesheet" type="text/css" href="css/footer.css" />
-        <link rel="stylesheet" type="text/css" href="css/grunticon.css" />
-        <link rel="stylesheet" type="text/css" href="css/header.css" />
         <link rel="stylesheet" type="text/css" href="css/headings.css" />
-        <link rel="stylesheet" type="text/css" href="css/helper.css" />
         <link rel="stylesheet" type="text/css" href="css/hero.css" />
-        <link rel="stylesheet" type="text/css" href="css/icons.css" />
         <link rel="stylesheet" type="text/css" href="css/info.css" />
-        <link rel="stylesheet" type="text/css" href="css/logo_grid.css" />
         <link rel="stylesheet" type="text/css" href="css/mega_dropdown.css" />
-        <link rel="stylesheet" type="text/css" href="css/nav.css" />
         <link rel="stylesheet" type="text/css" href="css/overlay.css" />
-        <link rel="stylesheet" type="text/css" href="css/pill_switch.css" />
         <link rel="stylesheet" type="text/css" href="css/pricing_table.css" />
-        <link rel="stylesheet" type="text/css" href="css/product_cards.css" />
         <link rel="stylesheet" type="text/css" href="css/product_grid.css" />
-        <link rel="stylesheet" type="text/css" href="css/regular_dropdown.css" />
         <link rel="stylesheet" type="text/css" href="css/sections.css" />
-        <link rel="stylesheet" type="text/css" href="css/share_demo.css" />
         <link rel="stylesheet" type="text/css" href="css/signup_form.css" />
-        <link rel="stylesheet" type="text/css" href="css/simple_info_box.css" />
         <link rel="stylesheet" type="text/css" href="css/split.css" />
-        <link rel="stylesheet" type="text/css" href="css/stats.css" />
         <link rel="stylesheet" type="text/css" href="css/templates.css" />
-        <link rel="stylesheet" type="text/css" href="css/testimonials.css" />
         <link rel="stylesheet" type="text/css" href="css/video_container.css" />
         <title>HTTP/2 testing</title>
     </head>
